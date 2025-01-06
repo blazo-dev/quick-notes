@@ -1,0 +1,51 @@
+:root {
+    --font-family: "Outfit", sans-serif;
+
+    --font-title-size: 2.5rem;
+    /* 40px */
+    --font-description-size: 1rem;
+    /* 16px */
+    --font-task-title-size: 1.25rem;
+    /* 20px */
+    --font-task-button-size: 1rem;
+    /* 16px */
+    --font-button-text-size: 0.875rem;
+    /* 14px */
+    --font-input-label-size: 0.75rem;
+    /* 12px */
+
+    --font-weight-regular: 400;
+    --font-weight-light: 300;
+    --font-weight-semibold: 600;
+    --font-weight-medium: 500;
+
+    --color-background: #f8fafc;
+    --color-add-task-light: #f5e8d5;
+    --color-in_progress-light: #f5d565;
+    --color-in_progress: #e9a23b;
+    --color-completed-light: #a0ecb1;
+    --color-completed: #32d657;
+    --color-wont_do-light: #f7d4d3;
+    --color-wont_do: #dd524c;
+    --color-todo: #e3e8ef;
+    --color-delete: #97a3b6;
+    --color-highlight: #3662e3;
+    --color-overlay: #00000033;
+
+    --border-radius: 0.7rem;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--color-background);
+}
+
+h1 {
+    font-size: var(--font-title-size);
+    font-weight: var(--font-weight-regular);
+}
+
+p {
+    font-size: var(--font-description-size);
+    font-weight: var(--font-weight-regular);
+}

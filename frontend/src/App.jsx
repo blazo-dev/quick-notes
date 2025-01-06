@@ -1,10 +1,13 @@
 import "./App.css";
+import Navbar from "./components/Navbar";
+import Board from "./pages/Board";
 
 function App() {
   return (
-    <>
-      <h1>QuickNotes</h1>
-    </>
+    <main className="page-layout">
+      <Navbar />
+      <Board />
+    </main>
   );
 }
 

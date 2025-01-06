@@ -1,0 +1,88 @@
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    padding: 0.8rem;
+
+    background-color: var(--color-todo);
+    border-radius: var(--border-radius);
+
+    cursor: pointer;
+}
+
+.task__content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.task__details {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.task__title,
+.task__description {
+    margin-block: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.task__title {
+    font-size: var(--font-task-title-size);
+    font-weight: var(--font-weight-semibold);
+}
+
+.task__description {
+    font-size: var(--font-description-size);
+    font-weight: var(--font-weight-light);
+}
+
+.task__icon,
+.task__status-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 40px;
+    width: 40px;
+    padding: 0.5rem;
+
+    border-radius: var(--border-radius);
+}
+
+.task__icon {
+    background-color: var(--color-background);
+}
+
+.task__status-icon {
+    background-color: var(--color-wont_do);
+}
+
+.task__status-icon--completed {
+    background-color: var(--color-completed);
+}
+
+.task__status-icon--in_progress {
+    background-color: var(--color-in_progress);
+}
+
+.task__status-icon--wont_do {
+    background-color: var(--color-wont_do);
+}
+
+.task--completed {
+    background-color: var(--color-completed-light);
+}
+
+.task--in_progress {
+    background-color: var(--color-in_progress-light);
+}
+
+.task--wont_do {
+    background-color: var(--color-wont_do-light);
+}
