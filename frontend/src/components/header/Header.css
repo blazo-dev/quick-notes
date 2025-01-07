@@ -1,0 +1,10 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header__title,
+.header__paragraph {
+    margin-block: 0;
+}

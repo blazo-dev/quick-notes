@@ -1,11 +1,11 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
+import Header from "./components/header/Header";
 import Board from "./pages/Board";
 
 function App() {
   return (
     <main className="page-layout">
-      <Navbar />
+      <Header />
       <Board />
     </main>
   );

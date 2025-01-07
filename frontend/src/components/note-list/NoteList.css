@@ -1,0 +1,15 @@
+.note-list {
+    overflow-y: scroll;
+
+    display: grid;
+    gap: 1rem;
+
+    height: 60vh;
+
+    margin-block: 0;
+    padding-left: 0;
+
+    scrollbar-color: var(--color-in_progress-light) transparent;
+    scrollbar-width: thin;
+
+}

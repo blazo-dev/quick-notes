@@ -1,4 +1,4 @@
-.task {
+.note {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -10,40 +10,42 @@
     background-color: var(--color-todo);
     border-radius: var(--border-radius);
 
+    color: var(--color-text);
+
     cursor: pointer;
 }
 
-.task__content {
+.note__content {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-.task__details {
+.note__details {
     display: grid;
     gap: 0.5rem;
 }
 
-.task__title,
-.task__description {
+.note__title,
+.note__description {
     margin-block: 0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.task__title {
-    font-size: var(--font-task-title-size);
+.note__title {
+    font-size: var(--font-note-title-size);
     font-weight: var(--font-weight-semibold);
 }
 
-.task__description {
+.note__description {
     font-size: var(--font-description-size);
     font-weight: var(--font-weight-light);
 }
 
-.task__icon,
-.task__status-icon {
+.note__icon,
+.note__status-icon {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -55,34 +57,34 @@
     border-radius: var(--border-radius);
 }
 
-.task__icon {
+.note__icon,
+.note__status-icon {
     background-color: var(--color-background);
 }
 
-.task__status-icon {
-    background-color: var(--color-wont_do);
-}
-
-.task__status-icon--completed {
+.note__status-icon--completed,
+.note__icon--completed {
     background-color: var(--color-completed);
 }
 
-.task__status-icon--in_progress {
+.note__status-icon--in_progress,
+.note__icon--in_progress {
     background-color: var(--color-in_progress);
 }
 
-.task__status-icon--wont_do {
+.note__status-icon--wont_do,
+.note__icon--wont_do {
     background-color: var(--color-wont_do);
 }
 
-.task--completed {
+.note--completed {
     background-color: var(--color-completed-light);
 }
 
-.task--in_progress {
+.note--in_progress {
     background-color: var(--color-in_progress-light);
 }
 
-.task--wont_do {
+.note--wont_do {
     background-color: var(--color-wont_do-light);
 }

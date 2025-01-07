@@ -5,39 +5,69 @@
     /* 40px */
     --font-description-size: 1rem;
     /* 16px */
-    --font-task-title-size: 1.25rem;
+    --font-note-title-size: 1.25rem;
     /* 20px */
-    --font-task-button-size: 1rem;
+    --font-note-button-size: 1rem;
     /* 16px */
     --font-button-text-size: 0.875rem;
     /* 14px */
     --font-input-label-size: 0.75rem;
     /* 12px */
 
-    --font-weight-regular: 400;
-    --font-weight-light: 300;
-    --font-weight-semibold: 600;
-    --font-weight-medium: 500;
+    --color-add-note-bg: #f5e8d5;
+    --color-add-button-icon: #e9a23b;
 
-    --color-background: #f8fafc;
-    --color-add-task-light: #f5e8d5;
     --color-in_progress-light: #f5d565;
     --color-in_progress: #e9a23b;
+
     --color-completed-light: #a0ecb1;
     --color-completed: #32d657;
+
     --color-wont_do-light: #f7d4d3;
     --color-wont_do: #dd524c;
+
     --color-todo: #e3e8ef;
     --color-delete: #97a3b6;
     --color-highlight: #3662e3;
     --color-overlay: #00000033;
 
+    --font-weight-regular: 400;
+    --font-weight-light: 300;
+    --font-weight-semibold: 600;
+    --font-weight-medium: 500;
+
     --border-radius: 0.7rem;
 }
+
+:root[data-theme="light"] {
+    color-scheme: light;
+    --color-background: #f8fafc;
+    --color-text: #080608;
+}
+
+:root[data-theme="dark"] {
+    color-scheme: dark;
+
+    --color-background: #121212;
+    --color-text: #f8fafc;
+
+    --color-add-note-bg: #092B50;
+    --color-add-button-icon: #001B32;
+
+    --color-in_progress-light: #DAA520;
+    --color-in_progress: #B8860B;
+    --color-completed-light: #448f6a;
+    --color-completed: #006633;
+    --color-wont_do-light: #9B3922;
+    --color-wont_do: #820000;
+    --color-todo: #333333;
+}
+
 
 body {
     font-family: var(--font-family);
     background-color: var(--color-background);
+    /* color: var(--color-text); */
 }
 
 h1 {

@@ -1,0 +1,37 @@
+.button {
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+
+    width: 100%;
+    padding: 0.8rem;
+
+    background-color: var(--color-add-note-bg);
+    border: none;
+    border-radius: var(--border-radius);
+
+    cursor: pointer;
+
+}
+
+.button__img {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 40px;
+    width: 40px;
+    padding: 0.5rem;
+
+    border-radius: var(--border-radius);
+
+    background-color: var(--color-add-button-icon);
+}
+
+.button__title {
+    margin-block: 0;
+
+    font-size: var(--font-note-title-size);
+    font-weight: var(--font-weight-semibold);
+}

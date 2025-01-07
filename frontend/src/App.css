@@ -1,7 +1,8 @@
 .page-layout {
     display: grid;
+    gap: 1.5rem;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     grid-template-columns: 1fr min(90%, 575px) 1fr;
     min-height: 100vh;
 
