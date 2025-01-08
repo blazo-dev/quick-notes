@@ -1,11 +1,13 @@
+import useToggle from "../../hooks/useToggle";
 import "./Modal.css";
 
 function Modal({ isOpen, children }) {
-  if (!isOpen) return null;
+  const [modalOpened, toggleModal] = useToggle(isOpen);
+
+  if (!modalOpened) return null;
 
   return (
-    <div className="modal">
-      <h1>Edit Note</h1>
+    <div className="modal" onClick={toggleModal}>
       {children}
     </div>
   );
